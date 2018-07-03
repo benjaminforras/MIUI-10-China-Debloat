@@ -1,0 +1,69 @@
+# This file will be read by resetprop
+# Example: Change dpi
+# ro.sf.lcd_density=320
+
+# Telephone ring delay
+ro.telephony.call_ring.delay=0
+ring.delay=0
+
+ro.product.locale=en-GB
+
+# Faster Boot-Animation FPS
+boot.fps=20
+
+# Better Responsiveness & Speed
+windowsmgr.max_events_per_sec=90
+ro.max.fling_velocity=15000
+ro.min.fling_velocity=8000
+touch.pressure.scale=0.1
+ro.min_pointer_dur=1
+
+# Background memory management
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+# Setup DNS
+net.dns1=8.8.8.8
+net.dns2=208.67.222.222
+
+# Support For IPV4 and IPV6
+persist.telephony.support.ipv6=1
+persist.telephony.support.ipv4=1
+
+# Network buffer tuning
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,8 7380,1048576
+net.tcp.buffersize.hspa=6144,87380,524288,6144,163 84,262144
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144, 87380,1048576
+
+# Enable Quick Power-On Mode To Reduce Boot-Time
+ro.config.hw_quickpoweron=true
+persist.sys.shutdown.mode=hibernate
+
+# Indicator_Hack
+captive_portal_detection_enabled=0
+dalvik.vm.dex2oat-filter=interpret-only
+dalvik.vm.image-dex2oat-filter=speed
+
+# Camera2API
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1
+
+# Increase jpg quality to 100%
+ro.media.enc.jpeg.quality=100
+persist.sys.use_dithering=1
+
+# Debugging Notification turned off
+persist.adb.notify=0

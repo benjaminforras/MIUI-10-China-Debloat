@@ -1,0 +1,7 @@
+id=miui-10-china-dev-debloat
+name=MIUI 10 China Developer Debloat
+version=v0.3
+versionCode=03
+author=TryHardDood
+description=This module will debloat & Optimize the China Developer MIUI 10
+minMagisk=1500
